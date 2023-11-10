@@ -29,10 +29,10 @@ class State:
     def __init__(self):
         # * This class should contain all the variables that are used across the app.
         # * For example selected team, workspace, project, dataset, etc.
-        self.selected_team = sly.io.env.team_id()
-        self.selected_workspace = sly.io.env.workspace_id()
-        self.selected_project = sly.io.env.project_id(raise_not_found=False)
-        self.selected_dataset = sly.io.env.dataset_id(raise_not_found=False)
+        self.selected_team = sly.env.team_id()
+        self.selected_workspace = sly.env.workspace_id()
+        self.selected_project = sly.env.project_id(raise_not_found=False)
+        self.selected_dataset = sly.env.dataset_id(raise_not_found=False)
 
         self.continue_working = True
 
