@@ -11,7 +11,7 @@ if sly.is_development():
 
 
 # * Creating an instance of the supervisely API according to the environment variables.
-api: sly.Api = sly.Api.from_env()
+api = sly.Api.from_env()
 
 
 # * This variable requires SLY_APP_DATA_DIR in local.env file.
