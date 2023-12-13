@@ -1,7 +1,6 @@
 import os
 
 import supervisely as sly
-
 from dotenv import load_dotenv
 
 if sly.is_development():
@@ -22,6 +21,7 @@ SLY_APP_DATA_DIR = sly.app.get_data_dir()
 # * If not needed, this code can be securely removed.
 STATIC_DIR = os.path.join(SLY_APP_DATA_DIR, "static")
 sly.fs.mkdir(STATIC_DIR)
+
 
 # * To avoid global variables in different modules, it's better to use g.STATE (g.AppState) object
 # * across the app. It can be accessed from any module by importing globals module.
